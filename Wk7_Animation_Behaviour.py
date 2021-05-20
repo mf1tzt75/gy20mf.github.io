@@ -52,9 +52,13 @@ def distance_between(a, b):
     return (((a.x - b.x)**2) + ((a.y - b.y)**2))**0.5
 
 # Initialise variables
-num_of_agents = 10
-num_of_iterations = 100
-neighbourhood = 20
+num_of_agents = input("How many agents? ")
+num_of_iterations = input("How many iterations? ")
+neighbourhood = input("Distance between agents before they share? ")
+
+num_of_agents = int(num_of_agents)
+num_of_iterations = int(num_of_iterations)
+neighbourhood = int(neighbourhood)
 
 # Make the agents.
 agents = []
